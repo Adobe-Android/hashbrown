@@ -6,6 +6,10 @@ Works with Windows. Microsoft .NET Framework 4.7.2 or later.
 
 ## Usage
 
+### Go to [Releases](https://github.com/Adobe-Android/hashbrown/releases), download the .exe file, and run. Enjoy :)
+
+## Development
+
 ### Clone the repo
 ```
 git clone git@github.com:Adobe-Android/hashbrown.git

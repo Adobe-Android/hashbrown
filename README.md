@@ -3,7 +3,7 @@ You haven't eaten breakfast yet and you're craving hashbrowns but still have to 
 
 ## Compatibility
 * Windows (Microsoft .NET Framework 4.7.2 or later)
-* Wine 10.0
+* [Wine 10.0](https://www.winehq.org/)
 
 ## Features
 * Native Windows

@@ -20,9 +20,6 @@ You haven't eaten breakfast yet and you're craving hashbrowns but still have to 
 
 ### Go to [Releases](https://github.com/Adobe-Android/hashbrown/releases), download the .exe file, and run. Enjoy :)
 
-## Screenshot
-![Hashbrown.exe](screenshots/hashbrown-screenshot.png)
-
 ## Additional Installation Steps for macOS
 Refer to [WineHQ Wiki - MacOS](https://gitlab.winehq.org/wine/wine/-/wikis/MacOS) for any additional help or context.
 
@@ -52,13 +49,16 @@ brew install --cask --no-quarantine wine-stable
 sudo port install wine-stable
 ```
 
+## Screenshot
+![Hashbrown.exe](screenshots/hashbrown-screenshot.png)
+
 ## Usage
 1. Click the "Browse" button located at the top center of the program
 2. This will launch a new open file dialog window
 3. Select a file by navigating to the one you want and clicking on it
 4. Then click "Open" in the menu
 
-![Hashbrown.exe Open File Dialog Window](screenshots/)
+![Hashbrown.exe Open File Dialog Window](screenshots/hashbrown-open-file-dialog.png)
 
 5. Select a "Hash Type" by clicking one of the radio button options
 6. The selected file's hash will be generated and visible in the lower left text box - labeled as "File Hash (Computed)" within the program

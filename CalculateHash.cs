@@ -41,6 +41,17 @@ namespace Hashbrown
                 }
             }
         }
+        internal static string CalculateSHA512(string filename)
+        {
+            using (var sha512 = SHA512.Create())
+            {
+                using (var stream = File.OpenRead(filename))
+                {
+                    var hash = sha512.ComputeHash(stream);
+                    return BitConverter.ToString(hash).Replace("-", "").ToLowerInvariant();
+                }
+            }
+        }
         internal static string CalculateCRC32(string filename)
         {
             var crc32 = new Crc32();

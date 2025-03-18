@@ -96,6 +96,17 @@ namespace Hashbrown
             }
         }
 
+        private void hashTypeSHA512RadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            clearState();
+            bool isEmpty = isFileNameEmpty();
+            if (hashTypeSHA512RadioButton.Checked && !isEmpty)
+            {
+                hashOutput.Text = CalculateHash.CalculateSHA512(fileNameTxt.Text);
+                verifyChecksumBtn.Enabled = true;
+            }
+        }
+
         private void hashTypeCRC32RadioButton_CheckedChanged(object sender, EventArgs e)
         {
             clearState();
@@ -106,11 +117,13 @@ namespace Hashbrown
                 verifyChecksumBtn.Enabled = true;
             }
         }
+
         private void clearState()
         {
             outputTextBox.Text = string.Empty;
             outputTextBox.BackColor = Color.Empty;
         }
+
         private bool isFileNameEmpty()
         {
             if (string.IsNullOrEmpty(fileNameTxt.Text))

@@ -41,6 +41,7 @@
             this.outputTxtLabel = new System.Windows.Forms.Label();
             this.hashTypeMD5RadioButton = new System.Windows.Forms.RadioButton();
             this.hashTypeGroupBox = new System.Windows.Forms.GroupBox();
+            this.hashTypeSHA512RadioButton = new System.Windows.Forms.RadioButton();
             this.hashTypeCRC32RadioButton = new System.Windows.Forms.RadioButton();
             this.hashTypeSHA256RadioButton = new System.Windows.Forms.RadioButton();
             this.hashTypeSHA1RadioButton = new System.Windows.Forms.RadioButton();
@@ -50,7 +51,7 @@
             // browseLabel
             // 
             this.browseLabel.AutoSize = true;
-            this.browseLabel.Location = new System.Drawing.Point(303, 40);
+            this.browseLabel.Location = new System.Drawing.Point(285, 35);
             this.browseLabel.Name = "browseLabel";
             this.browseLabel.Size = new System.Drawing.Size(202, 20);
             this.browseLabel.TabIndex = 0;
@@ -58,9 +59,9 @@
             // 
             // browseBtn
             // 
-            this.browseBtn.Location = new System.Drawing.Point(361, 95);
+            this.browseBtn.Location = new System.Drawing.Point(345, 90);
             this.browseBtn.Name = "browseBtn";
-            this.browseBtn.Size = new System.Drawing.Size(84, 41);
+            this.browseBtn.Size = new System.Drawing.Size(80, 40);
             this.browseBtn.TabIndex = 1;
             this.browseBtn.Text = "Browse";
             this.browseBtn.UseVisualStyleBackColor = true;
@@ -68,36 +69,36 @@
             // 
             // hashOutput
             // 
-            this.hashOutput.Location = new System.Drawing.Point(12, 450);
+            this.hashOutput.Location = new System.Drawing.Point(10, 450);
             this.hashOutput.Multiline = true;
             this.hashOutput.Name = "hashOutput";
             this.hashOutput.ReadOnly = true;
-            this.hashOutput.Size = new System.Drawing.Size(304, 137);
+            this.hashOutput.Size = new System.Drawing.Size(300, 150);
             this.hashOutput.TabIndex = 2;
             // 
             // fileNameTxt
             // 
             this.fileNameTxt.AcceptsReturn = true;
-            this.fileNameTxt.Location = new System.Drawing.Point(12, 161);
+            this.fileNameTxt.Location = new System.Drawing.Point(16, 160);
             this.fileNameTxt.MaxLength = 260;
             this.fileNameTxt.Name = "fileNameTxt";
-            this.fileNameTxt.Size = new System.Drawing.Size(776, 26);
+            this.fileNameTxt.Size = new System.Drawing.Size(750, 26);
             this.fileNameTxt.TabIndex = 3;
             // 
             // hashInput
             // 
-            this.hashInput.Location = new System.Drawing.Point(484, 450);
+            this.hashInput.Location = new System.Drawing.Point(460, 450);
             this.hashInput.Multiline = true;
             this.hashInput.Name = "hashInput";
-            this.hashInput.Size = new System.Drawing.Size(304, 137);
+            this.hashInput.Size = new System.Drawing.Size(300, 150);
             this.hashInput.TabIndex = 4;
             // 
             // verifyChecksumBtn
             // 
             this.verifyChecksumBtn.Enabled = false;
-            this.verifyChecksumBtn.Location = new System.Drawing.Point(361, 504);
+            this.verifyChecksumBtn.Location = new System.Drawing.Point(345, 500);
             this.verifyChecksumBtn.Name = "verifyChecksumBtn";
-            this.verifyChecksumBtn.Size = new System.Drawing.Size(84, 41);
+            this.verifyChecksumBtn.Size = new System.Drawing.Size(80, 40);
             this.verifyChecksumBtn.TabIndex = 5;
             this.verifyChecksumBtn.Text = "Verify";
             this.verifyChecksumBtn.UseVisualStyleBackColor = true;
@@ -106,7 +107,7 @@
             // hashOutputLabel
             // 
             this.hashOutputLabel.AutoSize = true;
-            this.hashOutputLabel.Location = new System.Drawing.Point(12, 412);
+            this.hashOutputLabel.Location = new System.Drawing.Point(10, 410);
             this.hashOutputLabel.Name = "hashOutputLabel";
             this.hashOutputLabel.Size = new System.Drawing.Size(164, 20);
             this.hashOutputLabel.TabIndex = 6;
@@ -115,7 +116,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(480, 412);
+            this.label1.Location = new System.Drawing.Point(460, 410);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(189, 20);
             this.label1.TabIndex = 7;
@@ -123,16 +124,16 @@
             // 
             // outputTextBox
             // 
-            this.outputTextBox.Location = new System.Drawing.Point(156, 629);
+            this.outputTextBox.Location = new System.Drawing.Point(169, 690);
             this.outputTextBox.Name = "outputTextBox";
             this.outputTextBox.ReadOnly = true;
-            this.outputTextBox.Size = new System.Drawing.Size(513, 26);
+            this.outputTextBox.Size = new System.Drawing.Size(480, 26);
             this.outputTextBox.TabIndex = 8;
             // 
             // outputTxtLabel
             // 
             this.outputTxtLabel.AutoSize = true;
-            this.outputTxtLabel.Location = new System.Drawing.Point(374, 590);
+            this.outputTxtLabel.Location = new System.Drawing.Point(355, 640);
             this.outputTxtLabel.Name = "outputTxtLabel";
             this.outputTxtLabel.Size = new System.Drawing.Size(58, 20);
             this.outputTxtLabel.TabIndex = 9;
@@ -151,21 +152,34 @@
             // 
             // hashTypeGroupBox
             // 
+            this.hashTypeGroupBox.Controls.Add(this.hashTypeSHA512RadioButton);
             this.hashTypeGroupBox.Controls.Add(this.hashTypeCRC32RadioButton);
             this.hashTypeGroupBox.Controls.Add(this.hashTypeSHA256RadioButton);
             this.hashTypeGroupBox.Controls.Add(this.hashTypeSHA1RadioButton);
             this.hashTypeGroupBox.Controls.Add(this.hashTypeMD5RadioButton);
-            this.hashTypeGroupBox.Location = new System.Drawing.Point(307, 228);
+            this.hashTypeGroupBox.Location = new System.Drawing.Point(289, 216);
             this.hashTypeGroupBox.Name = "hashTypeGroupBox";
-            this.hashTypeGroupBox.Size = new System.Drawing.Size(200, 148);
+            this.hashTypeGroupBox.Size = new System.Drawing.Size(200, 175);
             this.hashTypeGroupBox.TabIndex = 11;
             this.hashTypeGroupBox.TabStop = false;
             this.hashTypeGroupBox.Text = "Hash Type";
             // 
+            // hashTypeSHA512RadioButton
+            // 
+            this.hashTypeSHA512RadioButton.AutoSize = true;
+            this.hashTypeSHA512RadioButton.Location = new System.Drawing.Point(6, 115);
+            this.hashTypeSHA512RadioButton.Name = "hashTypeSHA512RadioButton";
+            this.hashTypeSHA512RadioButton.Size = new System.Drawing.Size(95, 24);
+            this.hashTypeSHA512RadioButton.TabIndex = 14;
+            this.hashTypeSHA512RadioButton.TabStop = true;
+            this.hashTypeSHA512RadioButton.Text = "SHA512";
+            this.hashTypeSHA512RadioButton.UseVisualStyleBackColor = true;
+            this.hashTypeSHA512RadioButton.CheckedChanged += new System.EventHandler(this.hashTypeSHA512RadioButton_CheckedChanged);
+            // 
             // hashTypeCRC32RadioButton
             // 
             this.hashTypeCRC32RadioButton.AutoSize = true;
-            this.hashTypeCRC32RadioButton.Location = new System.Drawing.Point(6, 118);
+            this.hashTypeCRC32RadioButton.Location = new System.Drawing.Point(6, 145);
             this.hashTypeCRC32RadioButton.Name = "hashTypeCRC32RadioButton";
             this.hashTypeCRC32RadioButton.Size = new System.Drawing.Size(86, 24);
             this.hashTypeCRC32RadioButton.TabIndex = 13;
@@ -199,8 +213,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = global::Hashbrown.Properties.Resources.hashbrown_tiled;
-            this.ClientSize = new System.Drawing.Size(800, 688);
+            this.ClientSize = new System.Drawing.Size(778, 744);
             this.Controls.Add(this.hashTypeGroupBox);
             this.Controls.Add(this.outputTxtLabel);
             this.Controls.Add(this.outputTextBox);
@@ -236,8 +251,9 @@
         private System.Windows.Forms.RadioButton hashTypeMD5RadioButton;
         private System.Windows.Forms.GroupBox hashTypeGroupBox;
         private System.Windows.Forms.RadioButton hashTypeSHA1RadioButton;
-        private System.Windows.Forms.RadioButton hashTypeCRC32RadioButton;
         private System.Windows.Forms.RadioButton hashTypeSHA256RadioButton;
+        private System.Windows.Forms.RadioButton hashTypeCRC32RadioButton;
+        private System.Windows.Forms.RadioButton hashTypeSHA512RadioButton;
     }
 }
 

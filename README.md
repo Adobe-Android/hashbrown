@@ -14,6 +14,7 @@ You haven't eaten breakfast yet and you're craving hashbrowns but still have to 
 * MD5
 * SHA1
 * SHA-2 (SHA-256)
+* SHA-2 (SHA-512)
 * CRC32
 
 ## Download

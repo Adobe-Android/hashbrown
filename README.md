@@ -21,7 +21,7 @@ You haven't eaten breakfast yet and you're craving hashbrowns but still have to 
 - [X] Ship a Windows installer
 - [ ] Optimize hashing for large files (> 1 GB) - [Stack Overflow](https://stackoverflow.com/questions/1177607/what-is-the-fastest-way-to-create-a-checksum-for-large-files-in-c-sharp)
 - [ ] Test compatibility across Windows versions (10, 8.1, 7, Vista, XP)
-- [ ] Write a script to add the application icon to the dock in macOS
+- [ ] Write a script to add the application icon to the dock in macOS - [David Baumgold Blog](https://www.davidbaumgold.com/tutorials/wine-mac/#making-a-dock-icon)
 - [ ] Test application auto update feature
 - [ ] Add drag and drop of a file into the file path
 
